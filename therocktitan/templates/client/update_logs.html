@@ -1,0 +1,29 @@
+{% extends "client/base.html" %}
+{% load static %}
+{% block link %}
+    <link rel="stylesheet" href="{% static 'css/update_logs.css' %}" type="text/css">
+{% endblock %}
+{% block title %}Update Logs{% endblock %}
+{% block section %}
+<div class="timeline-area">
+    <div class="container">
+        <div class="timelines">
+            <h2><font style="color: #f0ff6b;">Updates</font></h2>
+        </div>
+        <div class="all-timelines">
+        <!--SINGLE TIMELINE-->
+        {% for i in update_logs %}
+            <div class="single-timeline d-flex-2">
+                <div class="timeline-blank"></div>
+            <div class="timeline-text d-flex-2">
+            <span>
+                <h6><font style="color: #f85656;">{{i.date}}</font></h6> — {{i.comments}}
+            </span>
+            <div class="t-square"></div>
+            </div>
+            </div>
+        {% endfor %}
+    </div>
+</div>
+{% endblock %}
+

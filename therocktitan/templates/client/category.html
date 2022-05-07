@@ -1,4 +1,4 @@
-{% extends "base.html" %}
+{% extends "client/base.html" %}
 {% load static %}
 {% block link %}
     <link href="{% static 'css/category.css' %}" rel="stylesheet" type="text/css">
@@ -7,7 +7,7 @@
 {% block section %}
         <div class="cards-wrapper">
             <div class="card-grid-space">
-              <a class="card" href="/macro_and_micro" style="--bg-img: url('{% static 'img/category/macro_and_micro.png' %}')">
+              <a class="card" href="{% url 'client:macro_and_micro' %}" style="--bg-img: url('{% static 'img/category/macro_and_micro.png' %}')">
                 <div>
                   <h1 style="color: rgb(255, 91, 91);">Macro and Micro</h1>
                   <p>
@@ -21,7 +21,7 @@
               </a>
             </div>
             <div class="card-grid-space">
-              <a class="card" href="/matchup" style="--bg-img: url('{% static 'img/category/matchups.png' %}')">
+              <a class="card" href="{% url 'client:matchup' %}" style="--bg-img: url('{% static 'img/category/matchups.png' %}')">
                 <div>
                   <h1 style="color: #effd6f;">Match ups</h1>
                   <p>You must learn about it to climb!</p>
@@ -32,7 +32,7 @@
               </a>
             </div>
             <div class="card-grid-space">
-              <a class="card" href="/runes" style="--bg-img: url('{% static 'img/category/runes.png' %}')">
+              <a class="card" href="{% url 'client:runes' %}" style="--bg-img: url('{% static 'img/category/runes.png' %}')">
                 <div>
                   <h1 style="color: rgb(91, 116, 255);">Runes</h1>
                   <p>Take in consideration about it, not always you're using the same runes</p>
@@ -43,7 +43,7 @@
               </a>
             </div>
             <div class="card-grid-space">
-                <a class="card" href="/items_and_builds" style="--bg-img: url('{% static 'img/category/items_and_builds.png' %}')">
+                <a class="card" href="{% url 'client:items_and_builds' %}" style="--bg-img: url('{% static 'img/category/items_and_builds.png' %}')">
                   <div>
                     <h1 style="color: rgb(255, 91, 200);">Items and Builds</h1>
                     <p>Starting, middle and late items.</p>
@@ -54,7 +54,7 @@
                 </a>
               </div>
               <div class="card-grid-space">
-                <a class="card" href="/update_logs" style="--bg-img: url('{% static 'img/category/updatelog.png' %}')">
+                <a class="card" href="{% url 'client:update_logs' %}" style="--bg-img: url('{% static 'img/category/updatelog.png' %}')">
                   <div>
                     <h1 style="color: rgb(250, 162, 224); ">Update Log</h1>
                     <p>Check the last updates that I've been doing to the page don't die</p>
@@ -65,7 +65,7 @@
                 </a>
               </div>
               <div class="card-grid-space">
-                <a class="card" href="/blog" style="--bg-img: url('{% static 'img/category/blogs.png' %}')">
+                <a class="card" href="{% url 'client:blog' %}" style="--bg-img: url('{% static 'img/category/blogs.png' %}')">
                   <div>
                     <h1 style="color: rgb(250, 212, 162); ">Blogs</h1>
                     <p>Check it out my personal blog!</p>

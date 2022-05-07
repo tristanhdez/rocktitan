@@ -1,0 +1,27 @@
+{% extends "client/base.html" %}
+{% load static %}
+{% block link %}
+    <link rel="stylesheet" href="{% static 'css/policy.css' %}" type="text/css">
+{% endblock %}
+{% block title %}Home{% endblock %}
+{% block section %}
+<div class="content">
+    <div class="info">
+        <h2>Important!</h2>
+        <p>
+            These assets are copyrighted to Riot Games Inc<br>
+            <font style="color: #758eff;">However</font>: Riot Games allows use of their League of Legends intellectual property when meeting the conditions lined in their Legal Jibber-Jabber policy.<br>
+            This Website believes usage falls under US fair-use law because: <br>
+            Riot Games profits are not limited in any way whatsoever and the asset is merely being used for product promotion purposes.<br>
+            <font style="color: #f85656;">Disclaimer</font>: The Rock Titan Guide was created under Riot Games <font style="color: #f0ff6b;">"Legal Jibber Jabber"</font> policy using assets owned by Riot Games, isn't endorsed by Riot Games and doesn't reflect the views or opinions of
+            <br>Riot Games or anyone officially involved in producing or managing Riot Games properties
+            <br>Riot Games does not endorse or sponsor this project. This is a fan project created with <i class="fas fa-heart" style="color: #f85656;"></i>. 
+            <br><font style="color: #f85656;">No profit, No commercial</font>.
+            <br>Riot Games, and all associated properties are trademarks or registered trademarks of Riot Games, Inc. © Riot Games, Inc. All rights reserved. 'Riot Games', 'League of Legends', and 'PvP.net' are trademarks, services marks, or registered trademarks of Riot Games, Inc.
+        </p>
+      </div>
+      <div class="image-rock">
+        <img src="{% static 'img/rock_lawyer.png' %}">
+    </div>
+  </div>
+{% endblock %}
