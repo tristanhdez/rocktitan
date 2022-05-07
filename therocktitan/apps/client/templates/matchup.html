@@ -1,0 +1,274 @@
+{% extends "base.html" %}
+{% load static %}
+{% block link %}
+    <link rel="stylesheet" href="{% static 'css/matchup.css' %}" type="text/css">
+{% endblock %}
+{% block title %}Matchup{% endblock %}
+{% block section %}
+<div class="tier-container">
+
+    <div class="title">
+        <h3>If you need faster Matchups, you could my tier here</h3>
+        <h4> Otherwise, you can check the details below</h4>
+    </div>
+
+    <div class="tierlist">
+        
+        <h4 style="color: #f85656;">Always Ban</h4>
+        <div class="tierlist-wrapper-always-ban">
+            <div class="box a">
+                <img src="{% static 'img/champions/Sylas.png' %}">
+            </div>
+        </div>
+        
+        <h4 style="color: #f85656;">Impossible, just survive</h4>
+        <div class="tierlist-wrapper-impossible">
+            <div class="box a">
+                <img src="{% static 'img/champions/TahmKench.png' %}">
+            </div>
+            <div class="box b">
+                <img src="{% static 'img/champions/Warwick.png' %}">
+            </div>
+            <div class="box c">
+                <img src="{% static 'img/champions/Rumble.png' %}">
+            </div>
+        </div>
+
+        <h4 style="color: #f85656;">Very Hard and Annoying</h4>
+        <div class="tierlist-wrapper-very-hard">
+            <div class="box a">
+                <img src="{% static 'img/champions/Darius.png' %}">
+            </div>
+            <div class="box b">
+                <img src="{% static 'img/champions/Yorick.png' %}">
+            </div>
+        </div>
+        
+        <h4 style="color: #f85656;">Rare Matchup but Annoying</h4>
+        <div class="tierlist-wrapper-rare-matchup">
+            <div class="box a">
+                <img src="{% static 'img/champions/Ryze.png' %}">
+            </div>
+            <div class="box b">
+                <img src="{% static 'img/champions/Cassiopeia.png' %}">
+            </div>
+            <div class="box c">
+                <img src="{% static 'img/champions/Viktor.png' %}">
+            </div>
+            <div class="box d">
+                <img src="{% static 'img/champions/Sejuani.png' %}">
+            </div>
+            <div class="box e">
+                <img src="{% static 'img/champions/Swain.png' %}">
+            </div>
+            <div class="box f">
+                <img src="{% static 'img/champions/Heimerdinger.png' %}">
+            </div>
+        </div>
+
+        <h4 style="color: #f85656;">Hard but Playable</h4>
+        <div class="tierlist-wrapper-hard-playable">
+            <div class="box a">
+                <img src="{% static 'img/champions/Kled.png' %}">
+            </div>
+            <div class="box b">
+                <img src="{% static 'img/champions/Aatrox.png' %}">
+            </div>
+            <div class="box c">
+                <img src="{% static 'img/champions/Illaoi.png' %}">
+            </div>
+            <div class="box d">
+                <img src="{% static 'img/champions/Mordekaiser.png' %}">
+            </div>
+            <div class="box e">
+                <img src="{% static 'img/champions/Chogath.png' %}">
+            </div>
+            <div class="box f">
+                <img src="{% static 'img/champions/Volibear.png' %}">
+            </div>
+            <div class="box g">
+                <img src="{% static 'img/champions/DrMundo.png' %}">
+            </div>
+            <div class="box h">
+                <img src="{% static 'img/champions/Aatrox.png' %}">
+            </div>
+            <div class="box i">
+                <img src="{% static 'img/champions/Gwen.png' %}">
+            </div>
+            <div class="box j">
+                <img src="{% static 'img/champions/Sett.png' %}">
+            </div>
+            <div class="box k">
+                <img src="{% static 'img/champions/Akali.png' %}">
+            </div>
+            <div class="box l">
+                <img src="{% static 'img/champions/Ornn.png' %}">
+            </div>
+            <div class="box m">
+                <img src="{% static 'img/champions/Shen.png' %}">
+            </div>
+            <div class="box n">
+                <img src="{% static 'img/champions/Teemo.png' %}">
+            </div>
+            <div class="box o">
+                <img src="{% static 'img/champions/Rengar.png' %}">
+            </div>
+            <div class="box p">
+                <img src="{% static 'img/champions/Yone.png' %}">
+            </div>
+            <div class="box q">
+                <img src="{% static 'img/champions/Yasuo.png' %}">
+            </div>
+            <div class="box w">
+                <img src="{% static 'img/champions/Gragas.png' %}">
+            </div>
+        </div>
+
+        <h4 style="color: #c5832d;">A bit Annoying (NO PRIO)</h4>
+        <div class="tierlist-wrapper-bit-annoying">
+            <div class="box a">
+                <img src="{% static 'img/champions/Camille.png' %}">
+            </div>
+            <div class="box b">
+                <img src="{% static 'img/champions/Fiora.png' %}">
+            </div>
+            <div class="box c">
+                <img src="{% static 'img/champions/Riven.png' %}">
+            </div>
+            <div class="box d">
+                <img src="{% static 'img/champions/Renekton.png' %}">
+            </div>
+            <div class="box e">
+                <img src="{% static 'img/champions/Nasus.png' %}">
+            </div>
+            <div class="box f">
+                <img src="{% static 'img/champions/Kennen.png' %}">
+            </div>
+            <div class="box g">
+                <img src="{% static 'img/champions/Vladimir.png' %}">
+            </div>
+            <div class="box h">
+                <img src="{% static 'img/champions/Gnar.png' %}">
+            </div>
+            <div class="box i">
+                <img src="{% static 'img/champions/Vayne.png' %}">
+            </div>
+        </div>
+
+        <h4 style="color: #bbc74b;">Even</h4>
+        <div class="tierlist-wrapper-even">
+            <div class="box a">
+                <img src="{% static 'img/champions/Maokai.png' %}">
+            </div>
+            <div class="box b">
+                <img src="{% static 'img/champions/Tryndamere.png' %}">
+            </div>
+            <div class="box c">
+                <img src="{% static 'img/champions/Garen.png' %}">
+            </div>
+            <div class="box d">
+                <img src="{% static 'img/champions/Irelia.png' %}">
+            </div>
+            <div class="box e">
+                <img src="{% static 'img/champions/Urgot.png' %}">
+            </div>
+            <div class="box f">
+                <img src="{% static 'img/champions/Pantheon.png' %}">
+            </div>
+            <div class="box g">
+                <img src="{% static 'img/champions/Trundle.png' %}">
+            </div>
+        </div>
+
+        <h4 style="color: #bbc74b;">Easy</h4>
+        <div class="tierlist-wrapper-easy">
+            <div class="box a">
+                <img src="{% static 'img/champions/Jax.png' %}">
+            </div>
+            <div class="box b">
+                <img src="{% static 'img/champions/Jayce.png' %}">
+            </div>
+            <div class="box c">
+                <img src="{% static 'img/champions/Wukong.png' %}">
+            </div>
+            <div class="box d">
+                <img src="{% static 'img/champions/Lucian.png' %}">
+            </div>
+            <div class="box e">
+                <img src="{% static 'img/champions/Akshan.png' %}">
+            </div>
+            <div class="box f">
+                <img src="{% static 'img/champions/Quinn.png' %}">
+            </div>
+        </div>
+
+        <h4 style="color: #bbc74b;">Very Easy</h4>
+        <div class="tierlist-wrapper-very-easy">
+            <div class="box a">
+                <img src="{% static 'img/champions/Singed.png' %}">
+            </div>
+            <div class="box b">
+                <img src="{% static 'img/champions/Kayle.png' %}">
+            </div>
+        </div>
+
+    </div>
+</div>
+{% endblock %}
+
+{% block content %}
+<section>
+    <div class="container">
+        <div class="matchup-info">
+            <h2>Difficulty</h2>
+            <p>
+                <font style="color: #f72a2a;">Very Hard:</font> Lots of kill pressure on you<br>
+                <font style="color: #f85656;">Unfavored:</font> Absorbs your Q poke, annoying to play against, kill pressure if presented with opportunity<br>
+                <font style="color: #faba5b;">Medium (Even):</font> Even match up<br>
+                <font style="color: #5df555;">Easy:</font> Should not give you any troubles<br>
+                Blank: Not enough experience<br>
+            </p>
+        </div>
+    </div>
+    <div class="matchup-table">
+        <table id="keywords" cellspacing="0" cellpadding="0">
+            <thead>
+                <tr>
+                  <th><span>Champion</span></th>
+                  <th><span>Runes</span></th>
+                  <th class="starting-item"><span>Starting Item</span></th>
+                  <th class="skill-max"><span>Skills Max</span></th>
+                  <th class="difficulty"><span>Difficulty</span></th>
+                  <th><span>Comments</span></th>
+                  <th><span></span></th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for i in matchup %}
+                <tr>
+                    <td class="img-champ"><img src="{% static '/img/champions/' %}{{i.champions}}.png"><br>{{i.champions}}</td>
+                    {% if i.slot_rune_one %}
+                    <td>{{i.rune}} and {{i.slot_rune_one}}</td>
+                    {% elif i.slot_rune_two %}
+                    <td>{{i.rune}} and {{i.slot_rune_two}}</td>
+                    {% elif i.slot_rune_three %}
+                    <td>{{i.rune}} and {{i.slot_rune_three}}</td>
+                    {% else %}
+                    <td>{{i.rune}}</td>
+                    {% endif %}
+                    <td class="starting-item">{{i.item}}</td>
+                    <td class="skill-max">{{i.skill_max}}</td>
+                    <td class="difficulty">{{i.difficulty}}</td>
+                    <td class="comments" id="comments">{{i.comments|linebreaks}}</td>
+                    {% if i.notes %}
+                    <td>Note: {{i.notes}}</td>
+                    {% else %}
+                    <td></td>
+                    {% endif %}
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+    </div>
+    </section>
+{% endblock %}

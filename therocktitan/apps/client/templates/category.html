@@ -1,0 +1,80 @@
+{% extends "base.html" %}
+{% load static %}
+{% block link %}
+    <link href="{% static 'css/category.css' %}" rel="stylesheet" type="text/css">
+{% endblock %}
+{% block title %}Category{% endblock %}
+{% block section %}
+        <div class="cards-wrapper">
+            <div class="card-grid-space">
+              <a class="card" href="/macro_and_micro" style="--bg-img: url('{% static 'img/category/macro_and_micro.png' %}')">
+                <div>
+                  <h1 style="color: rgb(255, 91, 91);">Macro and Micro</h1>
+                  <p>
+                    Everyone is going to tell you up front,
+                    don't worry, you're a tank. But you need to do a lot more than that to get to climb!
+                  </p>
+                  <div class="tags">
+                    <div class="tag" style="background-color: rgb(255, 91, 91); color: rgb(255, 255, 255);">Mac&Mic</div>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="card-grid-space">
+              <a class="card" href="/matchup" style="--bg-img: url('{% static 'img/category/matchups.png' %}')">
+                <div>
+                  <h1 style="color: #effd6f;">Match ups</h1>
+                  <p>You must learn about it to climb!</p>
+                  <div class="tags">
+                    <div class="tag" style="background-color: rgb(239, 253, 111); color: rgb(12, 11, 11);">Matchups</div>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="card-grid-space">
+              <a class="card" href="/runes" style="--bg-img: url('{% static 'img/category/runes.png' %}')">
+                <div>
+                  <h1 style="color: rgb(91, 116, 255);">Runes</h1>
+                  <p>Take in consideration about it, not always you're using the same runes</p>
+                  <div class="tags">
+                    <div class="tag" style="background-color: rgb(91, 116, 255); color: rgb(12, 11, 11);">Runes</div>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="card-grid-space">
+                <a class="card" href="/items_and_builds" style="--bg-img: url('{% static 'img/category/items_and_builds.png' %}')">
+                  <div>
+                    <h1 style="color: rgb(255, 91, 200);">Items and Builds</h1>
+                    <p>Starting, middle and late items.</p>
+                    <div class="tags">
+                      <div class="tag" style="background-color: rgb(255, 91, 200); color: rgb(12, 11, 11);">Items&Builds</div>
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <div class="card-grid-space">
+                <a class="card" href="/update_logs" style="--bg-img: url('{% static 'img/category/updatelog.png' %}')">
+                  <div>
+                    <h1 style="color: rgb(250, 162, 224); ">Update Log</h1>
+                    <p>Check the last updates that I've been doing to the page don't die</p>
+                    <div class="tags">
+                      <div class="tag" style="background-color: rgb(250, 162, 224); color: rgb(12, 11, 11);">Updates</div>
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <div class="card-grid-space">
+                <a class="card" href="/blog" style="--bg-img: url('{% static 'img/category/blogs.png' %}')">
+                  <div>
+                    <h1 style="color: rgb(250, 212, 162); ">Blogs</h1>
+                    <p>Check it out my personal blog!</p>
+                    <div class="tags">
+                      <div class="tag" style="background-color: rgb(250, 212, 162); color: rgb(12, 11, 11);">Blog</div>
+                    </div>
+                  </div>
+                </a>
+              </div>
+            </div>
+    </section>
+{% endblock %}
