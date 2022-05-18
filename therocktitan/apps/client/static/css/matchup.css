@@ -1,0 +1,203 @@
+html{
+    background-color: #262323;
+}
+
+.tier-container{
+    max-width: auto;
+    margin: 60px 100px;
+}
+
+.tier-container .title{
+    text-align: center; 
+}
+
+.tier-container .title h3{
+    margin-top: -50px;
+    color: #ecff71;
+    font-size: 20px;
+    text-transform: uppercase;
+    font-weight: 800;
+    letter-spacing: 2px;
+    line-height: 60px;
+}
+
+.tier-container .title h4{
+    margin-top: -25px;
+    color: #ffff6b;
+    font-size: 12px;
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 2px;
+    line-height: 60px;
+}
+
+.box{
+	width: 40px;
+	height: 40px;
+	margin: auto;
+	padding: auto;
+}
+
+.tierlist img{
+    height: 40px;
+    width: 40px;
+}
+
+.tierlist h4{
+    font-size: 15px;
+    text-transform: uppercase;
+    font-weight: 800;
+    letter-spacing: 1px;
+    line-height: 30px;
+}
+
+/*  START ALWAYS BAN */
+
+.tierlist .tierlist-wrapper-always-ban{
+    display: grid;
+    grid-template-rows: repeat(1, 40px);
+    grid-template-columns: repeat(1, 40px);
+}
+  
+/*END ALWAYS BAN*/
+
+/* START IMPOSSIBLE JUST SURVIVE */
+
+.tierlist .tierlist-wrapper-impossible{
+	display: grid;
+	grid-template-rows: repeat(1, 40px);
+	grid-template-columns: repeat(4, 40px);
+}
+
+/* END IMPOSSIBLE JUST SURVIVE */
+
+
+.tierlist .tierlist-wrapper-very-hard{
+	display: grid;
+	grid-template-rows: repeat(1, 40px);
+	grid-template-columns: repeat(2, 40px);
+}
+
+.tierlist .tierlist-wrapper-rare-matchup{
+	display: grid;
+	grid-template-rows: repeat(1, 40px);
+	grid-template-columns: repeat(6, 40px);
+}
+
+.tierlist .tierlist-wrapper-hard-playable{
+	display: grid;
+	grid-template-rows: repeat(1, 40px);
+	grid-template-columns: repeat(20, 40px);
+}
+
+.tierlist .tierlist-wrapper-bit-annoying{
+	display: grid;
+	grid-template-rows: repeat(1, 40px);
+	grid-template-columns: repeat(10, 40px);
+}
+
+.tierlist .tierlist-wrapper-even{
+	display: grid;
+	grid-template-rows: repeat(1, 40px);
+	grid-template-columns: repeat(7, 40px);
+}
+
+.tierlist .tierlist-wrapper-easy{
+	display: grid;
+	grid-template-rows: repeat(1, 40px);
+	grid-template-columns: repeat(7, 40px);
+}
+
+.tierlist .tierlist-wrapper-very-easy{
+	display: grid;
+	grid-template-rows: repeat(1, 40px);
+	grid-template-columns: repeat(7, 40px);
+}
+
+
+
+
+
+.container{
+    max-width: auto;
+    margin: 60px 100px;
+}
+
+.container .matchup-info h2{
+    color: #f0ff6b;
+    font-size: 50px;
+    text-transform: uppercase;
+    font-weight: 800;
+    letter-spacing: 2px;
+    line-height: 60px;
+    margin-bottom: 30px;
+}
+
+.container .matchup-info p{
+    font-size: 16px;
+    font-weight: 500;
+    margin-bottom: 40px;
+    color: #fff;
+}
+
+.matchup-table{
+    margin: 60px 100px 100px;
+}
+
+#keywords thead tr th span { 
+  text-align: center;
+}
+#keywords thead tr th{
+    color: #f0ff6b;
+    font-size: 15px;
+    text-transform: uppercase;
+    font-weight: 800;
+    letter-spacing: 2px;
+    padding-bottom: 15px;
+}
+
+
+#keywords tbody tr {
+    color: rgb(255, 255, 255);
+}
+  #keywords tbody tr td:not(#comments) {
+    text-align: center;
+}
+
+.img-champ{
+    width: auto;
+}
+
+.img-champ img{
+    width: 50px;
+    height: 50px;
+}
+
+.starting-item{
+    width: 120px;
+}
+
+.skill-max{
+    width: 100px;
+}
+
+.img-champ{
+    width: auto;
+}
+
+.img-champ img{
+    width: 50px;
+    height: 50px;
+}
+
+.starting-item{
+    width: 120px;
+}
+
+.skill-max{
+    width: 100px;
+}
+
+.difficulty{
+    width: 120px;
+}

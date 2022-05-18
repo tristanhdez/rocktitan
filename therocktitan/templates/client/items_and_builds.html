@@ -1,0 +1,558 @@
+{% extends "client/base.html" %}
+{% load static %}
+{% block link %}
+    <link rel="stylesheet" href="{% static 'css/items_and_builds.css' %}" type="text/css">
+{% endblock %}
+{% block title %}Items And Builds{% endblock %}
+{% block section %}
+<section>
+    <div class="container-title">
+        <div class="title">
+            <h2>Items And Builds</h2>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="title">
+            <h3>Starting Items</h3>
+        </div>
+
+        <div class="starting-items">
+        <table id="keywords" cellspacing="0" cellpadding="0">
+            <thead>
+                <tr>
+                  <th>Time-Warp-Tonic</th>
+                  <th>Doran's Shield</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>
+                        <img src="{% static 'img/items/Corrupting Potion.jpeg' %}" alt="">
+                        <img src="{% static 'img/items/Stealth Ward.jpeg' %}" alt="">
+                    </td>
+                    <td>
+                        <img src="{% static 'img/items/Dorans Shield.png' %}" alt="">
+                        <img src="{% static 'img/items/Stealth Ward.jpeg' %}" alt="">
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        </div>
+        <div class="info">
+            <p>
+                Doran's shield is best for match ups where you can take short trades with your shield up
+                <br>Doran's shield requires you to play around your shield
+                I really like the raw stats it gives compare to Time Warp Tonic
+            </p>
+        </div>
+    </div>
+    <div class="container">
+        <div class="title">
+            <h3>Ideal First Back</h3>
+        </div>
+        <div class="ideal-firstback">
+            <table id="keywords" cellspacing="0" cellpadding="0">
+                <thead>
+                    <tr>
+                      <th>Get This Fast</th>
+                      <th>Against Healing*</th>
+                      <th>Against AP</th>
+                      <th>Or any of these if money can buy</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>
+                            <img src="{% static 'img/items/Tear of the Goddess.jpeg' %}" alt="">
+                        </td>
+                        <td>
+                            <img src="{% static 'img/items/Bramble Vest.jpeg' %}" alt="">
+                        </td>
+                        <td>
+                            <img src="{% static 'img/items/Null-Magic Mantle.jpeg' %}" alt="">
+                        </td>
+                        <td>
+                            <img src="{% static 'img/items/Cloth Armor.jpeg' %}" alt="">
+                            <img src="{% static 'img/items/Ruby Crystal.png' %}" alt="">
+                            <img src="{% static 'img/items/Boots.png' %}" alt="">
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="info">
+            <p>
+                You want to get tear ASAP to start stacking it early, once you get this, use your abilities to farm and poke more often
+                <br>*Get Bramble early against Fiora, Irelia
+            </p>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="title">
+            <h3>Situational</h3>
+        </div>
+        <div class="situational">
+        <table id="keywords" cellspacing="0" cellpadding="0">
+            <thead>
+                <tr>
+                  <th>You need to dodge skillshots</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>
+                        <img src="{% static 'img/items/Plated Steelcaps.jpeg' %}" alt="">
+                        <img src="{% static 'img/items/Mercurys Treads.jpeg' %}" alt="">
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="title">
+            <h3>Core</h3>
+        </div>
+
+        <div class="core">
+        <table id="keywords" cellspacing="0" cellpadding="0">
+            <thead>
+                <tr>
+                  <th>Standard ***</th>
+                  <th>2nd Item vs 3+ melee or VS ranged or Full tank, team doesn't need more damage</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>
+                        <img src="{% static 'img/items/Plated Steelcaps.jpeg' %}" alt=""> OR
+                        <img src="{% static 'img/items/Mercurys Treads.jpeg' %}" alt="">
+                    </td>
+                    <td>
+                        <img src="{% static 'img/items/Sunfire Aegis.jpeg' %}" alt=""> OR
+                        <img src="{% static 'img/items/Everfrost.jpeg' %}" alt=""> OR  
+                        <img src="{% static 'img/items/Frostfire Gauntlet.jpeg' %}" alt="">
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <div class="info">
+            <p>Get Mercs against, heavy CC (Ahri, Veigar, Kennen, Maokai, etc).</p>
+        </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="title">
+            <h3>Tank Core (The Go-To Build)</h3>
+        </div>
+
+        <div class="tank-core">
+            <table id="keywords" cellspacing="0" cellpadding="0">
+                <thead>
+                    <tr>
+                    <th></th>
+                    <th></th>
+                    <th>6th item to consider</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>
+                            <img src="{% static 'img/items/Plated Steelcaps.jpeg' %}" alt="">
+                            <img src="{% static 'img/items/Sunfire Aegis.jpeg' %}" alt="">
+                            <img src="{% static 'img/items/Fimbulwinter.jpeg' %}" alt="">
+                            <img src="{% static 'img/items/Thornmail.jpeg' %}" alt="">
+                        </td>
+                        <td>
+                            <img src="{% static 'img/items/Force of Nature.jpeg' %}" alt="">
+                            <img src="{% static 'img/items/Gargoyle Stoneplate.jpeg' %}" alt="">
+                        </td>
+                        <td>
+                            <img src="{% static 'img/items/Frozen Heart.jpeg' %}" alt="">
+                            <img src="{% static 'img/items/Randuins Omen.jpeg' %}" alt="">
+                            <img src="{% static 'img/items/Demonic Embrace.jpeg' %}" alt="">
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="info">
+                <p>
+                    If you're against 3+ melee (some bruiser + a melee support), Sunfire aegis is so good!
+                    <br>This build makes it so Malphite can fight long fights and can actually frontline while doing good consistant damage with Sunfire or provide consistant utility with Frostfire
+                    <br>If enemy comp is full of ranged champs, I would consider frostfire or everfrost, sunfire is terrible into ranged comps.
+                    <br>Frostfire is also good if you are behind and your team has enough damage
+                    Sometime you may need bramble before you finish fimbul
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="title">
+            <h3>AP Bruiser (vs True Damage):</h3>
+        </div>
+
+        <div class="ap-bruiser">
+            <table id="keywords" cellspacing="0" cellpadding="0">
+                <thead>
+                    <tr>
+                    <th></th>
+                    <th></th>
+                    <th>6th item to consider</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>
+                            <img src="{% static 'img/items/Plated Steelcaps.jpeg' %}" alt="">
+                            <img src="{% static 'img/items/Everfrost.jpeg' %}" alt="">
+                            <img src="{% static 'img/items/Thornmail.jpeg' %}" alt="">
+                            
+                        </td>
+                        <td>
+                            <img src="{% static 'img/items/Force of Nature.jpeg' %}" alt=""> OR
+                            <img src="{% static 'img/items/Gargoyle Stoneplate.jpeg' %}" alt="">
+                        </td>
+                        <td>
+                            <img src="{% static 'img/items/Frozen Heart.jpeg' %}" alt="">
+                            <img src="{% static 'img/items/Demonic Embrace.jpeg' %}" alt="">
+                            <img src="{% static 'img/items/Shadowflame.jpeg' %}" alt="">
+                            <img src="{% static 'img/items/Void Staff.jpeg' %}" alt="">
+                            <img src="{% static 'img/items/Randuins Omen.jpeg' %}" alt="">
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="info">
+                <p>
+                    Everfrost makes it so we're not as ult reliant. We have another form of cc when our ult is on cooldown. <br>
+                    Since this is not a one shot build, Everfrost allows for another 1.5s of cc on top of your ult, which hopefully the enemy will die after.
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="title">
+            <h3>Explanation Below</h3>
+        </div>
+        <div class="explanation">
+            <table id="keywords" cellspacing="0" cellpadding="0">
+                <thead>
+                    <tr>
+                    <th></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>
+                            <img src="{% static 'img/items/Control Ward.jpeg' %}" alt="">
+                            <img src="{% static 'img/items/Oracle Lens.jpeg' %}" alt="">
+                            
+                        </td>
+
+                    </tr>
+                </tbody>
+            </table>
+            <div class="info">
+                <p>
+                    You want to get infinite number of pinks... <br>
+                    Mid game basically get a pink ward everytime you back and have money.
+                    Swap out to sweeper once out of lane phase
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="3rd-item">
+            <div class="title">
+                <h3>3rd Item</h3>
+            </div>
+            <table id="keywords" cellspacing="0" cellpadding="0">
+                <thead>
+                    <tr>
+                    <th></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>
+                            <img src="{% static 'img/items/Fimbulwinter.jpeg' %}" alt="">
+                        </td>
+
+                    </tr>
+                </tbody>
+            </table>
+            <div class="info">
+                <p>
+                    Finally a mana item for us. Allows you to stay in lane longer with tear and really good for survivability later on.
+                    This item really allows Malphite to sustain in extended teamfights
+                    Also this makes other Mana items that much more efficient (Everfrost, Frozen Heart)
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="3rd-item">
+            <div class="title">
+                <h3>Tech items</h3>
+            </div>
+            <div class="info">
+                <p>
+                    After Fimbulwinter or 4th item onward, you can look to tech in some items if you see fit
+                    <br>Are you ahead? Are you looking to do more damage? One shot squishies or be better in the late game?
+                </p>
+                <br>
+            </div>
+            <table id="keywords" cellspacing="0" cellpadding="0">
+                <thead>
+                    <tr>
+                    <th><img src="{% static 'img/items/Demonic Embrace.jpeg' %}" alt=""></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>
+                        Good against High HP teams, Sion, Cho, Ornn or any bruiser comps
+                        <br>Also very good in the late game as a 5th or 6th item, everyone is lvl18 with a lot of Max health
+                        </td>
+
+                    </tr>
+                </tbody>
+            </table>
+            <table id="keywords" cellspacing="0" cellpadding="0">
+                <thead>
+                    <tr>
+                    <th><img src="{% static 'img/items/Shadowflame.jpeg' %}" alt=""></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>
+                            Against Karma, Lulu or anybody with a lot of shields, generally if enemy team has 3+ champs with any sort of shielding
+                            <br> Good against squishies with small shielding
+                        </td>
+
+                    </tr>
+                </tbody>
+            </table>
+            <table id="keywords" cellspacing="0" cellpadding="0">
+                <thead>
+                    <tr>
+                    <th><img src="{% static 'img/items/Thornmail.jpeg' %}" alt=""></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>
+                            I would build this against some single target damage Hyper Carries, something like a fed Jinx, Ryze, Karthus
+                            Champs that output consistant DPS on a single target before moving onto the next and can't ignore you.
+                        </td>
+
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+
+    <div class="container">
+        <div class="4rd-item">
+            <div class="title">
+                <h3>4th Item</h3>
+            </div>
+            <table id="keywords" cellspacing="0" cellpadding="0">
+                <thead>
+                    <tr>
+                    <th><img src="{% static 'img/items/Anathemas Chains.jpeg' %}" alt=""></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>
+                            I would sit on bramble then completing this after Fimbul
+                            <br>Thornmail is the best to get right now because it's GW and it does damage
+                            <br>While there is a lot of healing in the game, I would not get Thornmail if you're only against one person with a shieldbow or sunderer.
+                        </td>
+
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <div class="container">
+        <div class="5th-item">
+            <div class="title">
+                <h3>5th Item</h3>
+            </div>
+            <table id="keywords" cellspacing="0" cellpadding="0">
+                <thead>
+                    <tr>
+                    <th><img src="{% static 'img/items/Force of Nature.jpeg' %}" alt=""></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>
+                            Since Patch 12.1, get this against heavy AP dps, cassio, karthus, anivia, etc
+                        </td>
+
+                    </tr>
+                </tbody>
+            </table>
+            <table id="keywords" cellspacing="0" cellpadding="0">
+                <thead>
+                    <tr>
+                    <th><img src="{% static 'img/items/Gargoyle Stoneplate.jpeg' %}" alt=""></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>
+                            Alternative to FON, for Anti burst
+                            <br>Generally good, you'll have a lot of HP at this point.
+                            <br>Really makes sure you won't get bursted or focused down in a fight.
+                        </td>
+
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+
+    <div class="container">
+        <div class="6th-item">
+            <div class="title">
+                <h3>6th Item</h3>
+            </div>
+            <div class="info">
+                <p>
+                    Against certain comps with no healing and a lot of auto attackers, you can get this 4th item instead of Thornmail
+                    <br><br>
+                </p>
+            </div>
+            <table id="keywords" cellspacing="0" cellpadding="0">
+                <thead>
+                    <tr>
+                    <th><img src="{% static 'img/items/Randuins Omen.jpeg' %}" alt=""></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>
+                            Randuins against crit champs
+                        </td>
+
+                    </tr>
+                </tbody>
+            </table>
+            <table id="keywords" cellspacing="0" cellpadding="0">
+                <thead>
+                    <tr>
+                    <th><img src="{% static 'img/items/Frozen Heart.jpeg' %}" alt=""></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>
+                            FH against lots of auto attack champs
+                        </td>
+
+                    </tr>
+                </tbody>
+            </table>
+            <div class="info">
+                <p>
+                    You can honestly get these anytime
+                </p>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="container">
+        <div class="title">
+            <h3>My views on these items</h3>
+        </div>
+        <div class="info">
+            <p>
+                At first, I didn't want to make a guide on items and builds. It varies too much every game... But due to popular request, I decided to try my best and make one.
+                Right now, I think stacking armor or MR (or any defensive stats for that matter) is not optimal.
+                There are too many champs that do true damage or mix damage in the game... For example, Yone, Katarina, Camille, Kraken Slayer(item) or other tank buster items...
+                So I think, we should build some damage or items that help us engage. I wouldn't underestimate Malphite's damage if you build damage.
+                
+                Have you ever been in a situation late game where you do ZERO damage and if you didn't hit a good ult,
+                people can just ignore you in teamfights and walk past you and go for your carries? 
+                Then after they kill your carries, they just turn around and kill you right after...
+                This is why you need to build damage.
+                
+                Honestly... the 5th and 6th item slot rare gets built for me... Games almost always end before you get to build them.
+                
+                Be flexible with your builds, I try to do my best to make this item's guide 1+1=2 but every game is different, look at the enemy team and build what's good!
+            </p>
+        </div>
+    </div>
+    <div class="container-title">
+        <div class="title">
+            <h2>Retired Builds</h2>
+        </div>
+    </div>
+    <div class="container">
+        <div class="ap-malphite-core:">
+            <div class="title">
+                <h3>AP Malphite Core</h3>
+            </div>
+            <table id="keywords" cellspacing="0" cellpadding="0">
+                <thead>
+                    <tr>
+                    <th></th>
+                    <th></th>
+                    <th></th>
+                    <th></th>
+                    <th></th>
+                    <th>6th items to consider</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>
+                            <img src="{% static 'img/items/Sorcerers Shoes.jpeg' %}" alt="">
+                        </td>
+                        <td>
+                            <img src="{% static 'img/items/Ludens Tempest.jpeg' %}" alt="">
+                        </td>
+                        <td>
+                            <img src="{% static 'img/items/Horizon Focus.jpeg' %}" alt="">
+                        </td>
+                        <td>
+                            <img src="{% static 'img/items/Void Staff.jpeg' %}" alt="">
+                        </td>
+                        <td>
+                            <img src="{% static 'img/items/Rabadons Deathcap.jpeg' %}" alt="">
+                        </td>
+                        <td>
+                            <img src="{% static 'img/items/Zhonyas Hourglass.jpeg' %}" alt="">
+                            <img src="{% static 'img/items/Morellonomicon.jpeg' %}" alt="">
+                            <img src="{% static 'img/items/Cosmic Drive.jpeg' %}" alt="">
+                            <img src="{% static 'img/items/Lich Bane.jpeg' %}" alt="">
+                            <img src="{% static 'img/items/Mejais Soulstealer.jpeg' %}" alt="">
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="info">
+                <p>
+                    AP Malphite is really good against immobo squishy champs. 
+                    After some testing, Luden's with Horizon Focus next is the highest damage build right now for AP Malphite
+                    Because you get Mana from Luden's, you can go Eyeball collection and Ultimate hunter instead of biscuits
+                    We did some testing and buying void staff first before deathcap looks to be better.
+                    Mejai's if you're really ahead early game or your team has good peel, gotta be really responsible with Mejai's.
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+{% endblock %}

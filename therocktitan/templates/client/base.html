@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% load static %}
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta property=”og:locale” content=”en_US”>
+    <meta property=”og:type” content=”website”>
+    <link rel="icon" href="{% static 'img/rocktitan_logo.png' %}">
+    <link rel="stylesheet" href="{% static 'css/base.css' %}" type="text/css">
+    <link rel="stylesheet" href="{% static 'css/header.css' %}" type="text/css">
+    <link rel="stylesheet" href="{% static 'css/scroll.css' %}" type="text/css">
+    <link rel="stylesheet" href="{% static 'css/footer.css' %}" type="text/css">
+    {% block link %} {% endblock %}
+    <script src="https://kit.fontawesome.com/f04d0469dd.js" crossorigin="anonymous"></script>
+    <title>{% block title %}{% endblock %}</title>
+</head>
+<body>
+    <section>
+        <input type="checkbox" id="check">
+        <header>
+          </div>
+          <h2><a href="#" class="logo"></a></h2>
+          <div class="navigation">
+              <a href="{% url 'client:home' %}">Home</a>
+              <a href="{% url 'client:items_and_builds' %}">Items and Builds</a>
+              <a href="{% url 'client:macro_and_micro' %}">Macro and Micro</a>
+              <a href="{% url 'client:matchup' %}">Matchups</a>
+              <a href="{% url 'client:blog' %}">Blog</a>
+              <a href="{% url 'client:update_logs' %}">Updates</a>
+          </div>
+          <label for="check">
+          <i class="fas fa-bars menu-btn"></i>
+          <i class="fas fa-times close-btn"></i>
+          </label>
+        </header>
+        {% block section %}{% endblock %}
+    </section>
+    {% block content %}{% endblock %}
+    <footer>
+        The Rock Titan Guide was created under Riot Games' "Legal Jibber Jabber" policy using assets owned by Riot Games.
+        Riot Games does not endorse or sponsor this project. <br>
+        This is ONLY a fan project created with <i class="fas fa-heart" style="color: #f85656;"></i>. No profit, No commercial. <a href="/policy" style="color: #deeb71; text-decoration: none; font: bolder;"> More information here </a>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,45 @@
+{% extends "client/base.html" %}
+{% load static %}
+{% block link %}
+    <link rel="stylesheet" href="{% static 'css/home.css' %}" type="text/css">
+{% endblock %}
+{% block title %}Home{% endblock %}
+{% block section %}
+<div class="content">
+    <div class="info">
+      <h2>Welcome! <br><span>I'm The Rock Titan!</span></h2>
+      <p>
+        This guide is intended to anyone that wants to learn Malphite at a <font style="color: #f85656;">High level</font>.
+        This guide alone does not guarantee that you will get a high rank but will significantly raise your chances.
+        Other guides about top laning and general game knowledge <font style="color: rgb(89, 255, 145);">will help you climb as well</font>.
+      </p>
+      <a href="/category" class="info-btn">Start</a>
+    </div>
+</div>
+<div class="media-icons">
+
+    <a href="http://discord.gg/RW84RkqZBD"><i class="fab fa-discord"></i></a>
+    <a href="https://twitter.com/therocktitanlol"><i class="fab fa-twitter"></i></a>
+    <a href="https://www.twitch.tv/therocktitan"><i class="fab fa-twitch"></i></a>
+</div>
+{% endblock %}
+
+{% block content %}
+<section>
+    <div class="content-about">
+        <div class="info">
+            <h2>About me</h2>
+            <p>
+                I am a <font style="color: #f85656;">Malphite OTP</font> and I hit Master playing only <font style="color: #758eff;">Malphite!</font><br>
+                For anyone that wants to climb but <font style="color: rgb(250, 114, 198);">don't have the mechanics to do</font> so, <font style="color: #758eff;">Malphite</font> is your champ!<br>
+                Once in a while I get called, <font style="color: #f0ff6b;">"braindead Malphite player"</font> or <font style="color: #f0ff6b;">"Must be boring being a Malphite one trick"</font> but when you win and climb, you don't care what they say anymore!
+                <font style="color: #758eff;">Malphite</font> mains are humble, they know they are bad at video games so instead of trying to see who clicks the fastest, they admit defeat and play <font style="color: #758eff;">Malphite!</font>
+                <br>This is me... a 24 year old boomer that can't compete with the 16 year old gaming prodigy at this game.
+            </p>
+        </div>
+        <div class="image-rock">
+            <img src="{% static 'img/therock_teacher.png' %}">
+        </div>
+    </div>
+</section>
+{% endblock %}
