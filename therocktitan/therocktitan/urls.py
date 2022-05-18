@@ -22,4 +22,6 @@ urlpatterns = [
          admin.site.urls),
     path('', 
         include('apps.client.urls')),
+            path('admin-rock-titan/', 
+        include('apps.admin.urls')),
 ]

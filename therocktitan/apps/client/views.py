@@ -1,4 +1,3 @@
-from email.policy import Policy
 from django.shortcuts import render
 from .models import *
 
