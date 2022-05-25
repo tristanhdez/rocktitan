@@ -3,7 +3,6 @@ from .models import *
 
 
 # Register your models here.
-
 admin.site.register(Champion)
 admin.site.register(Path)
 admin.site.register(Keystone)

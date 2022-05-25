@@ -23,7 +23,6 @@ def policy(request):
 
 def matchup(request):
     matchup = Matchup.objects.all()
-    #messages.success(request,'Courses listed!')
     return render(request,"client/matchup.html", {"matchup":matchup})
 
 

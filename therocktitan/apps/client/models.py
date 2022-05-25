@@ -3,11 +3,9 @@ from django.db import models
 
 # Create your models here.
 
-
 class Champion(models.Model):
     id = models.PositiveSmallIntegerField(primary_key=True)
     name = models.CharField(max_length=50)
-    
     
     #Show data when we wanna print an object
     

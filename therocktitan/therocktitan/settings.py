@@ -25,15 +25,18 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-e501(9qk!y(4_-6#1jqas5y-s6i4=l+@7psxsmz3f2&8aocz!i'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['127.0.0.1', '.herokuapp.com']
 
 
 # Application definition
 
 INSTALLED_APPS = [
+    'whitenoise.runserver_nostatic',
+    'django.contrib.staticfiles',
     'apps.client',
+    'apps.superuser',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -44,6 +47,7 @@ INSTALLED_APPS = [
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
+    'whitenoise.middleware.WhiteNoiseMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
     'django.middleware.csrf.CsrfViewMiddleware',
@@ -83,7 +87,8 @@ DATABASES = {
         'USER':'dsosvmngekgsxt',
         'PASSWORD':'7fc579d3643c8b9c886f81b0bfb9e9f2d8b915bc05ab5ffd62cccc0506717ac5',
         'HOST':'ec2-52-4-104-184.compute-1.amazonaws.com',
-        'DATABASE_PORT':'7fc579d3643c8b9c886f81b0bfb9e9f2d8b915bc05ab5ffd62cccc0506717ac5'
+        'DATABASE_PORT':'7fc579d3643c8b9c886f81b0bfb9e9f2d8b915bc05ab5ffd62cccc0506717ac5',
+        'CONN_MAX_AGE': 500
     }
 }
 
@@ -128,3 +133,6 @@ STATIC_URL = 'static/'
 # https://docs.djangoproject.com/en/4.0/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+WHITENOISE_USE_FINDERS = True
+STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'

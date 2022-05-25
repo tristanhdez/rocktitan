@@ -1,0 +1,62 @@
+html{
+    background-color: #262323;
+}
+
+
+.container-title{
+    max-width: auto;
+    margin: 60px 100px;
+}
+
+img{
+    height: 45px;
+    width: 45px;
+}
+
+.runes{
+    max-width: auto;
+    align-items: center;
+    text-align: center;
+    align-self: center;
+    align-content: center;
+}
+
+.container-title .title h2{
+    text-align: center;
+    margin-top: -50px;
+    color: #ecff71;
+    font-size: 20px;
+    text-transform: uppercase;
+    font-weight: 800;
+    letter-spacing: 2px;
+    line-height: 60px;
+}
+
+
+.container{
+    max-width: auto;
+    margin: 60px 100px;
+}
+
+.container .title h3{
+    text-align: left;
+    margin-top: -50px;
+    color: #ecff71;
+    font-size: 20px;
+    text-transform: uppercase;
+    font-weight: 800;
+    letter-spacing: 2px;
+    line-height: 60px;
+}
+
+.info {
+    max-width: auto;
+    margin: auto auto;
+}
+
+
+.info p{
+    font-size: 16px;
+    font-weight: 500;
+    color: #fff;
+}

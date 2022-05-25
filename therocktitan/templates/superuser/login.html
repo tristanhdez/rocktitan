@@ -1,8 +1,17 @@
-{% extends "admin/base.html" %}
+{% extends "superuser/base.html" %}
 {% load static %}
 {% block title %}Master Login{% endblock %}
 {% block body %}
-<form action="{% url 'admin_rock_titan:home' %}" method="POST"> 
+{% if messages %}
+{% for message in messages %}
+
+<div class="alert alert-success" role="alert">
+    <button type="button" class="btn-close" aria-label="Close"></button>
+    <strong class="text-dark">{{ message }}</strong>
+</div>
+{% endfor %}
+{% endif %}
+<form action="{% url 'app_superuser:validation' %}" method="POST"> 
     {% csrf_token %}
     <section class="vh-100" style="background-color: #262323;">
         <div class="container py-5 h-100">
