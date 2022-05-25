@@ -87,12 +87,11 @@ WSGI_APPLICATION = 'therocktitan.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'NAME': 'da5bec1d9nhl9o',
-        'USER':'dsosvmngekgsxt',
-        'PASSWORD':'7fc579d3643c8b9c886f81b0bfb9e9f2d8b915bc05ab5ffd62cccc0506717ac5',
-        'HOST':'ec2-52-4-104-184.compute-1.amazonaws.com',
-        'DATABASE_PORT':'7fc579d3643c8b9c886f81b0bfb9e9f2d8b915bc05ab5ffd62cccc0506717ac5',
-        'CONN_MAX_AGE': 500
+        'NAME': env('da5bec1d9nhl9o'),
+        'USER':env('dsosvmngekgsxt'),
+        'PASSWORD':env('7fc579d3643c8b9c886f81b0bfb9e9f2d8b915bc05ab5ffd62cccc0506717ac5'),
+        'HOST':env('ec2-52-4-104-184.compute-1.amazonaws.com'),
+        'DATABASE_PORT':env('7fc579d3643c8b9c886f81b0bfb9e9f2d8b915bc05ab5ffd62cccc0506717ac5')
     }
 }
 
